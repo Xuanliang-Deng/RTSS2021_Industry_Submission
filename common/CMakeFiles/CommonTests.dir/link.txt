@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/CommonTests.dir/common.cpp.o CMakeFiles/CommonTests.dir/tests.cpp.o  -o CommonTests  /usr/local/lib/libgtest.a -lpthread 

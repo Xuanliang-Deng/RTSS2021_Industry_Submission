@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xuanliang/Fall2021/CPS-CAA/SBH-DAG/Fibbing.cpp
+Fibbing.h
+/home/xuanliang/Fall2021/CPS-CAA/SBH-DAG/Fibbing.h
+
+/home/xuanliang/Fall2021/CPS-CAA/SBH-DAG/Fibbing.h
+
+/home/xuanliang/Fall2021/CPS-CAA/SBH-DAG/main.cpp
+Fibbing.h
+/home/xuanliang/Fall2021/CPS-CAA/SBH-DAG/Fibbing.h
+gtest/gtest.h
+/home/xuanliang/Fall2021/CPS-CAA/SBH-DAG/gtest/gtest.h
+
+/home/xuanliang/Fall2021/CPS-CAA/SBH-DAG/tests.cpp
+iostream
+-
+gtest/gtest.h
+/home/xuanliang/Fall2021/CPS-CAA/SBH-DAG/gtest/gtest.h
+Fibbing.h
+/home/xuanliang/Fall2021/CPS-CAA/SBH-DAG/Fibbing.h
+

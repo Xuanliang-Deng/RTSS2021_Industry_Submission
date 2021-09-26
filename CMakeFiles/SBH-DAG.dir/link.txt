@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/SBH-DAG.dir/tests.cpp.o CMakeFiles/SBH-DAG.dir/Fibbing.cpp.o CMakeFiles/SBH-DAG.dir/main.cpp.o  -o SBH-DAG  /usr/local/lib/libgtest.a -lpthread 
