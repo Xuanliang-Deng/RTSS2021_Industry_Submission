@@ -72,7 +72,10 @@ Consider the case where the execution time (ET), starting time (ST) and deadline
 The Branch and Bound (BnB) search starts at the root node and expands to multiple branches. During this process, we apply the branch and cut (BnC) technique as well, i.e., if we find one branch violates the precedence constraint in DAG, or its lower bound of Lmax is larger than the existing schedule, it will be cut directly without further search. Consider the tree below as an example,  
 <div align=center><img width="350" height="300" src="https://github.com/Xuanliang-Deng/RTSS2021_Industry_Submission/blob/master/images/BNBTree.png"/></div>
 
-Exploring from the (dummy) root node, the schedule may start at node v1, v2, v4, v6, respectively. However, in DAG, node v1 has to execute first since it is the **predecessor** of all the remaining nodes. We know the branches starting at v2, v4, v6 (i.e., 2XXX,4XXX,6XXX) are all **infeasible** (denoted in red) due to the violation of precedence constraint in DAG. These branches are cut directly.
+Exploring from the (dummy) root node, the schedule may start at node v1, v2, v4, v6, respectively. However, in DAG, node v1 has to execute first since it is the **predecessor** of all the remaining nodes. We know the schedules starting at v2, v4, v6 (i.e., 2XXX,4XXX,6XXX) are all **infeasible** (denoted in red) due to the violation of precedence constraint in DAG. These branches are cut directly.  
+
+In addition, we further improve the efficiency of the search by cutting branches whose lower bound value of Lmax is larger than the existing schedule. For example, the maximal Lmax of schedule 1246 is 0, while for schedule 1624 the Lmax of node 2 is already 11, which is larger than schedule 1246. Then we do not even to complete the search for schedule along this branches because its lower bound already gets outperformed by exisiting schedule. That is, we do not need to compute the Lmax for node 4 in this schedule. It will be cut diretly (denoted in blue) once its Lmax exceeds the existing best one.  
+
 
 
 
