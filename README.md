@@ -54,7 +54,7 @@ Only precedence constraint is consdered when calculating the finish time of each
 |       5       |      1+5=6    |
 |       6       |   1+5+6=12    |
 
-Therefore, 
+Therefore, the starting makespan of CPU is max{FT(v_1),FT(v_2),FT(v_4),FT(v_6)} = 12, for GPU it is max{FT(v_3),FT(v_5)} = 6. The first bottleneck processor is selected as max{makespan(CPU), makespan(GPU)} = CPU. The bottleneck will be shifted to GPU in step 4.
 
 
 
