@@ -39,7 +39,7 @@ The DAG is given below. Each node is represented as (index, tag) pair which indi
 In the problem statement, it is assumed that the mapping between tasks and processing units is static, i.e., we know onto which processor should each task execute. In our StochHC-DAG, we represent this mapping by 'tags' associated with each node and parition nodes by their tags. As can be seen in the above figure, node 1,2,4,6 are mapped to CPU while node 3,5 are mapped to GPU.  
 
 - Select bottlleneck processor  
-When selecting the 'bottleneck' among all processors, we first calculate the 'starting makespan' of each procesor assuming there is no resource conflict between tasks. We illustrate the process using the example above. The ** execution time (ET) ** of each node is equal to their index, i.e., ** ET(v_n) = n **. All the tasks are parallelly listed starting from source node and end at sink node.  
+When selecting the 'bottleneck' among all processors, we first calculate the 'starting makespan' of each procesor assuming there is no resource conflict between tasks. We illustrate the process using the example above. The **execution time (ET)** of each node is equal to their index, i.e., **ET(v_n) = n**. All the tasks are parallelly listed starting from source node and end at sink node.  
 
 <div align=center><img width="800" height="600" src="https://github.com/Xuanliang-Deng/RTSS2021_Industry_Submission/blob/master/images/StartingMKS.png"/></div>
 
@@ -61,7 +61,7 @@ Now we analyze the bottleneck processor and find the optimal schedule on it, tha
     - Lmax (maximum lateness) of the schedule
     - precedence constraints (topological order in DAG) 
 
-Consider the case where the execution time (ET), starting time (ST) and deadline (DD) of each node is given in the table below, we then calculate the finish time (FT) of each node and Lmax of that schedule. ** Lmax = FT - DD **.
+Consider the case where the execution time (ET), starting time (ST) and deadline (DD) of each node is given in the table below, we then calculate the finish time (FT) of each node and Lmax of that schedule. **Lmax = FT - DD**.
 
 
 
