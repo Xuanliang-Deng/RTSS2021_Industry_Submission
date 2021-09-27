@@ -10,7 +10,6 @@ The structure of this README.md is shown as follows:
     - Find optimal schedule with BnB techniques
     - Shift bottleneck processor
 
-
 ## Instrution for running code
 - Install gtest for unit tests (work for Ubunutu 18 and newer version)
 ```
@@ -29,6 +28,11 @@ The structure of this README.md is shown as follows:
 - Screenshot for test results  
 Run the commands above you will get results below:  
 ![The image could not be found](https://github.com/Xuanliang-Deng/RTSS2021_Industry_Submission/blob/master/images/TaskResultsS.png)
+
+## Illustration for S-Bottleneck heuristic
+In this section, we first give a concrete DAG as an example to show how our algorithm works. Note that this is the preliminary version of implementation, we only consider the StochHC-DAG without probability-associated edges and conditional node.
+
+The DAG is given below. Each node is represented as (index, tag) pair which indicates the index of the node and the processing unit that it should run onto.
 
 
 
