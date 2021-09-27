@@ -41,7 +41,7 @@ In the problem statement, it is assumed that the mapping between tasks and proce
 - Select bottlleneck processor  
 When selecting the 'bottleneck' among all processors, we first calculate the 'starting makespan' of each procesor assuming there is no resource conflict between tasks. We illustrate the process using the example above. The execution time (ET) of each node is equal to their index, i.e., ET(v_n) = n. All the tasks are parallelly listed starting from source node and end at sink node.  
 
-<div align=center><img width="500" height="800" src="https://github.com/Xuanliang-Deng/RTSS2021_Industry_Submission/blob/master/images/StartingMKS.png"/></div>
+<div align=center><img width="800" height="600" src="https://github.com/Xuanliang-Deng/RTSS2021_Industry_Submission/blob/master/images/StartingMKS.png"/></div>
 
  and only precedence constraint is considered in this step.  
 
