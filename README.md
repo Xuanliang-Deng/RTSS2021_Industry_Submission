@@ -1,3 +1,15 @@
+# Struture of README.md
+- Instruction for running code
+    - Install gtest
+    - Run unit tests
+    - Screenshot for test results
+- Illustration for S-Bottleneck heuristic
+    - Partition DAG nodes
+    - Select bottlleneck processor
+    - Find optimal schedule with BnB techniques
+    - Shift bottleneck processor
+
+
 ## Instrution for running code
 - Install gtest for unit tests (work for Ubunutu 18 and newer version)
 ```
