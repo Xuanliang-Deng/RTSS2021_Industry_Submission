@@ -87,7 +87,12 @@ In addition, we further improve the efficiency of the search by cutting branches
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 |     Lmax(schedule 2XXX) = infeasible, do not need to compute    |
 
-
-
+| schedule 1624 |        1      |       6       |       2       |       4       |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+|       FT      |        1      |       12      |       14      |        X      |
+|       DD      |        1      |       13      |       3       |        8      |
+|     Lmax      |        0      |       -1      |       11      |        X      |
+|     Lmax(schedule 1624) = Computing is not finished               |
+|     Process ends at node 2 since its Lmax is 11, larger than existing schedule 1246               |
 
 
