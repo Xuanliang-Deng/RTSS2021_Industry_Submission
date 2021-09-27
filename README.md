@@ -56,7 +56,7 @@ Only precedence constraint is consdered when calculating the finish time of each
 
 Therefore, the starting makespan of CPU is max{FT(v_1),FT(v_2),FT(v_4),FT(v_6)} = 12, for GPU it is max{FT(v_3),FT(v_5)} = 6. The first bottleneck processor is selected as max{makespan(CPU), makespan(GPU)} = CPU. The bottleneck will be shifted to GPU in step 4.  
 
-- Find optimal schedule with BnB techniques
+- Find optimal schedule with BnB techniques  
 Now we analyze the bottleneck processor and find the optimal schedule on it, that is, we determine the execution order among the nodes in the ready queue. There are two key factors to determine such order:
     - Lmax (maximum lateness) of the schedule
     - precedence constraints (topological order in DAG) 
