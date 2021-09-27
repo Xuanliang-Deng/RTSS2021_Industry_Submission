@@ -97,7 +97,7 @@ We give two examples, (i)schedule 2XXX and (ii) schedule 1624, to illustrate our
 |     Lmax(schedule 1624) = Computing is not finished               |
 |     Process ends at node 2 since its Lmax is 11, larger than existing schedule 1246               |  
 
-- Shift bottleneck processor
+- Shift bottleneck processor  
 Once the optimal schedule of bottleneck processor is determined, we shift the bottleneck to the next processing unit which has maximal value of starting makespan in step 2. The whole process is terminated when all the processor are traversed.
 
 
