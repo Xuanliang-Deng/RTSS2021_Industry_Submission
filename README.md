@@ -1,4 +1,5 @@
-# Struture of README.md
+## Struture of README.md
+The structure of this README.md is shown as follows:
 - Instruction for running code
     - Install gtest
     - Run unit tests
