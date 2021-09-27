@@ -70,7 +70,7 @@ Consider the case where the execution time (ET), starting time (ST) and deadline
 |       DD      |        1      |       3       |       8       |      13       |
 
 The Branch and Bound (BnB) search starts at the root node and expands to multiple branches. During this process, we apply the branch and cut (BnC) technique as well, i.e., if we find one branch violates the precedence constraint in DAG, or its lower bound of Lmax is larger than the existing schedule, it will be cut directly without further search. Consider the tree below as an example,
-<div align=center><img width="800" height="600" src="https://github.com/Xuanliang-Deng/RTSS2021_Industry_Submission/blob/master/images/BNBTree.png"/></div>
+<div align=center><img width="400" height="350" src="https://github.com/Xuanliang-Deng/RTSS2021_Industry_Submission/blob/master/images/BNBTree.png"/></div>
 
 
 
