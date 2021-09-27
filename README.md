@@ -61,7 +61,14 @@ Now we analyze the bottleneck processor and find the optimal schedule on it, tha
     - Lmax (maximum lateness) of the schedule
     - precedence constraints (topological order in DAG) 
 
-Consider the case where the execution time (ET), starting time (ST) and deadline (DD) of each node is given in the table below, we then calculate the finish time (FT) of each node and Lmax of that schedule. **Lmax = FT - DD**.
+Consider the case where the execution time (ET), starting time (ST) and deadline (DD) of each node is given in the table below, we then calculate the finish time (FT) of each node and Lmax of that schedule. **Lmax = FT - DD**.  
+
+|               |        1      |       2       |       4       |       6       |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+|       ET      |        1      |       2       |       4       |       6       |
+|       ST      |        0      |       1       |       3       |       6       |
+|       DD      |        1      |       3       |       8       |      13       |
+
 
 
 
