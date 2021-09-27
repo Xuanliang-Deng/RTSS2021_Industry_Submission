@@ -85,7 +85,7 @@ In addition, we further improve the efficiency of the search by cutting branches
 
 | schedule 2xxx |        2      |       X       |       X       |       X       |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|     Lmax(schedule 2XXX) = not computed, schedule violates precedence constraints and is infeasible                                  |
+|     Lmax(schedule 2XXX) = infeasible, do not need to compute    |
 
 
 
