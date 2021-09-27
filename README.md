@@ -27,6 +27,7 @@ The structure of this README.md is shown as follows:
     $ ./TaskTests
 ```
 - Screenshot for test results  
+Run the commands above you will get results below:  
 ![The image could not be found](https://github.com/Xuanliang-Deng/RTSS2021_Industry_Submission/blob/master/images/TaskResultsS.png)
 
 
