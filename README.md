@@ -74,7 +74,14 @@ The Branch and Bound (BnB) search starts at the root node and expands to multipl
 
 Exploring from the (dummy) root node, the schedule may start at node v1, v2, v4, v6, respectively. However, in DAG, node v1 has to execute first since it is the **predecessor** of all the remaining nodes. We know the schedules starting at v2, v4, v6 (i.e., 2XXX,4XXX,6XXX) are all **infeasible** (denoted in red) due to the violation of precedence constraint in DAG. These branches are cut directly.  
 
-In addition, we further improve the efficiency of the search by cutting branches whose lower bound value of Lmax is larger than the existing schedule. For example, the maximal Lmax of schedule 1246 is 0, while for schedule 1624 the Lmax of node 2 is already 11, which is larger than schedule 1246. Then we do not even to complete the search for schedule along this branches because its lower bound already gets outperformed by exisiting schedule. That is, we do not need to compute the Lmax for node 4 in this schedule. It will be cut diretly (denoted in blue) once its Lmax exceeds the existing best one.  
+In addition, we further improve the efficiency of the search by cutting branches whose lower bound value of Lmax is larger than the existing schedule. For example, the maximal Lmax of schedule 1246 is 0, while for schedule 1624 the Lmax of node 2 is already 11, which is larger than schedule 1246. Then we do not even need to complete the search for schedule along this branch because its lower bound already gets outperformed by exisiting schedule. That is, we do not need to compute the Lmax for node 4 in this schedule. It will be cut diretly (denoted in blue) once its Lmax exceeds the existing best one.  
+
+| schedule 1246 |        1      |       2       |       4       |       6       |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+|       FT      |        1      |       3       |       7       |       13      |
+|       DD      |        1      |       3       |       8       |       13      |
+|     Lmax      |        0      |       0       |       -1      |        0      |
+|     Lmax(schedule 1246) = max(0,0,-1,0) = 0                                   |
 
 
 
