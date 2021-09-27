@@ -39,14 +39,22 @@ The DAG is given below. Each node is represented as (index, tag) pair which indi
 In the problem statement, it is assumed that the mapping between tasks and processing units is static, i.e., we know onto which processor should each task execute. In our StochHC-DAG, we represent this mapping by 'tags' associated with each node and parition nodes by their tags. As can be seen in the above figure, node 1,2,4,6 are mapped to CPU while node 3,5 are mapped to GPU.  
 
 - Select bottlleneck processor  
-When selecting the 'bottleneck' among all processors, we first calculate the 'starting makespan' of each procesor assuming there is no resource conflict between tasks. We illustrate the process using the example above. The execution time (ET) of each node is equal to their index, i.e., ET(v_n) = n. All the tasks are parallelly listed starting from source node and end at sink node.  
+When selecting the 'bottleneck' among all processors, we first calculate the 'starting makespan' of each procesor assuming there is no resource conflict between tasks. We illustrate the process using the example above. The ** execution time (ET) ** of each node is equal to their index, i.e., ** ET(v_n) = n **. All the tasks are parallelly listed starting from source node and end at sink node.  
 
 <div align=center><img width="800" height="600" src="https://github.com/Xuanliang-Deng/RTSS2021_Industry_Submission/blob/master/images/StartingMKS.png"/></div>
 
- and only precedence constraint is considered in this step.  
+Only precedence constraint is consdered when calculating the finish time of each node. For example, finish time (FT) of node v1 is 1, since it has no predecessor. For node v2, FT(v_2) = 1 + 2 = 3 since it has to wait for node v1 finishes execution. For node v3 FT(v_3) = 1 + 2 + 3 = 6. We show the FT of all nodes in the table below.  
 
+|   Node index  |   Finish time |
+| ------------- | ------------- |
+|       1       |        1      |
+|       2       |      1+2=3    |
+|       3       |    1+2+3=6    |
+|       4       |    1+2+4=7    |
+|       5       |      1+5=6    |
+|       6       |   1+5+6=12    |
 
-
+Therefore, 
 
 
 
