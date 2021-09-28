@@ -27,7 +27,9 @@ The structure of this README.md is shown as follows:
 ```
 - Screenshot for test results  
 Run the commands above you will get results below:  
-![The image could not be found](https://github.com/Xuanliang-Deng/RTSS2021_Industry_Submission/blob/master/images/TaskResultsS.png)
+![The image could not be found](https://github.com/Xuanliang-Deng/RTSS2021_Industry_Submission/blob/master/images/TaskResultsS.png)  
+
+Note that the cmake version should be higher than 3.13 for testing. If you have any issues running the tests please feel free to contact xuanliang@vt.edu.  
 
 ## Illustration for S-Bottleneck heuristic
 In this section, we first give a concrete DAG as an example to show how our algorithm works. Note that this is the preliminary version of implementation, we only consider the StochHC-DAG without probability-associated edges and conditional node.
