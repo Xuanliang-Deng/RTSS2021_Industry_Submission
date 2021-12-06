@@ -31,7 +31,7 @@ Run the commands above you will get results below:
 
 Note that the cmake version should be higher than 3.13 for testing. If you have any issues running the tests please feel free to contact xuanliang@vt.edu.  
 
-## Illustration for S-Bottleneck heuristic
+## Illustration for S-Bottleneck
 In this section, we first give a concrete DAG as an example to show how our algorithm works. Note that this is the preliminary version of implementation, we only consider the StochHC-DAG without probability-associated edges and conditional node.
 
 The DAG is given below. Each node is represented as (index, tag) pair which indicates the index of the node and the processing unit that it should run onto.  
